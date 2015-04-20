@@ -3,8 +3,6 @@
 
 ##Node Private Functions 
 
-//--------------------------------------------------------
-
 bool isArrayEmpty(): This is the private function that is used to determine if the array list that is stored in the node is empty. If arrayTail index pointer equals -1 then true is returned else false.
 
 int arraySize(): This is the private function that is used to get the integer value of the number of elements that are stored in the array list. The temp the int value for arrayTail + 1 is returned as the list size.
@@ -13,15 +11,12 @@ bool isArrayFull(): This is the private function that is used to check if the ar
 
 ## List Private Functions
 
-//---------------------------------------------------------
-
 int linkSize(): This is the private function that is used to get the integer value of the number of nodes that are stored in the list list. A node pointer is set the the head of the list and each time another node is found a int counter increments by one. When the end of the list is found the counter value is returned.
 
 void linkListResize(): This is the private function that is used to reduce the size of the linked list of nodes. If a certain number of empty nodes are in the list then this function is used to reduce the number of nodes in the list by half. The list is traversed until the first empty node is found, then every proceeding node is erased.
 
 
 ## Constructor/Destructor/Overloaded Operators 
-//-----------------------------------------------------------
 
 CDAL(): This is the default constructor this method is supposed to create an instance of the class SSLL at set head, tail pointer to NULL, and the int listTail which keeps track of the actual list size is set to -1 all indication an empty instance.
 
@@ -37,7 +32,6 @@ const T& operator[](int i): This is the overloaded [] operator that will return 
 
 
 ## Member Functions
-//---------------------------------------------------------
 
 T replace(const T& element, int position): This function is used to replace a value in the list with the value element at position that is passed into the function. The first part of this function checks if the list is empty, if so then a domain_error exception is thrown. The second check is if the int position is outside the range of index values possible for negative values and values that are beyond the end of the max list index, if so then an out_of_range exception is thrown. The next check is if the value for position between 0 and 50 indicating the element is located at the head node, if so, the old value that is in head->dataArray[i] is saved and element is save into head->dataArray[i] then the old value is returned. The next check is if the value for position is equal to linkSize()-1 or the tail node, if so the old value that is in tail->dataArray[i] is saved and element is save into tail->dataArray[1] then the old value is returned. For all other cases the linked list will be traverse until the node number matches between a strat index and end index value incrementing by 50 for each node, once the node is found then the old value that is in the currentNode->dataArray[i] is saved then replaced with new element and the old value is returned.
 
@@ -67,7 +61,6 @@ std::ostream& print(std::ostream& out) const: In this function all the element w
 
 
 ## CDAL_Iter Class 
-//--------------------------------------------------
 
 Class CDAL_Iter : public std::iterator<std::forward_iterator_tag, T>
 
@@ -92,7 +85,6 @@ bool operator!=( const CDAL_Iter& src): This is the == overloaded operator that 
 
 
 ## Const SSLL_Iter Class 
-//--------------------------------------------
 
 Class Const_CDAL_Iter : public std::iterator<std::forward_iterator_tag, T> explicit Const_CDAL_Iter(Node* start): This is the constructor for the iterator that takes in a node and set is to the class variable here.
 
