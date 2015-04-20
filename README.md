@@ -84,7 +84,7 @@ bool operator==( const CDAL_Iter& src): This is the == overloaded operator that 
 bool operator!=( const CDAL_Iter& src): This is the == overloaded operator that is used to compare two nodes of similar types to see if they are not equal, is so, then true is returned, if not, false is returned.
 
 
-## Const SSLL_Iter Class 
+## Const CDAL_Iter Class 
 
 Class Const_CDAL_Iter : public std::iterator<std::forward_iterator_tag, T> explicit Const_CDAL_Iter(Node* start): This is the constructor for the iterator that takes in a node and set is to the class variable here.
 
