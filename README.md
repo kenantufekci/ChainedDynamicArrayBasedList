@@ -1,4 +1,4 @@
-##Class CDAL
+##Chained Dynamic Array-based List - CDAL
 
 
 ##Node Private Functions 
