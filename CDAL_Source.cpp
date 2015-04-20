@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////
 //Author: Kenan Tarik Tufekci
-//Date: 04/20/2015
-//Title: CDAL Unit Tests
+//Date:   04/20/2015
+//Title:  CDAL Unit Tests
 ///////////////////////////////////////////////////
 
 #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do this in one cpp file
